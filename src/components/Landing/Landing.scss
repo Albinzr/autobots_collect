@@ -1,0 +1,49 @@
+@import '../../mixins';
+
+.Landing {
+  @extend flex;
+  width: 100%;
+  padding-top: 100px;
+  .l-block {
+    @extend flex;
+    flex: 1;
+    height: 100%;
+    flex-direction: column;
+    img {
+      width: 100%;
+    }
+    .lb-heading { 
+      padding-top: 50px;
+    }
+    .lb-desc {
+      padding-top: 30px;
+      max-width: 400px;
+    }
+    .lb-button {
+      margin-top: 15px;
+    }
+    .lb-input:focus{ 
+      border-color: #5C89FA; 
+      box-shadow: 2px 3px 23px #5c89fa2f;
+      outline: none;
+    }
+    .lb-input {
+      @extend box;
+      width: 300px;
+      height: 45px;
+      margin-top: 30px;
+      border-radius: 4px;
+      border: 2px solid transparent;
+      background: rgba(211, 211, 211, 0.239);
+      font-family: nun-reg;
+      font-size: 14px;
+      color: #555;
+      padding-left: 15px;
+    }
+    .lb-input.-emErr.-invalid:focus,
+    .lb-input.-emErr.-invalid{
+      border-color: rgb(179, 74, 74);
+      box-shadow: 2px 3px 43px rgba(255, 27, 27, 0.28);
+    }
+  }
+}

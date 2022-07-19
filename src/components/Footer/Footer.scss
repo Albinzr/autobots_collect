@@ -1,0 +1,231 @@
+@import '../../mixins';
+
+.Footer {
+  @extend flex;
+  width: 100%;
+  margin-top: 160px;
+  overflow: hidden;
+  .f-head-wrapper{
+    @extend flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    .f-head {
+      @extend flex;
+      width: 100%;
+      max-width: 800px;
+      min-height: 150px;
+      background: #FFFFFF;
+      box-shadow: 0px 37px 108px rgba(0, 0, 0, 0.13);
+      border-radius: 4px;
+      padding: 50px;
+      justify-content: center;
+      align-items: center;
+      .fh-text {
+        @extend flex;
+        flex: 1;
+        flex-direction: column;
+        .fht-heading,
+        .fht-desc {
+          @extend flex;
+          width: 100%;
+          font-family: nun-bold;
+          color: #555;
+          font-size: 20px;
+        }
+        .fht-desc {
+          font-family: nun-reg;
+          font-size: 14px;
+          padding-top: 10px;
+        }
+        padding-right: 80px;
+      }
+      .fh-buttons {
+        @extend flex;
+        flex:1;
+        justify-content: space-between;
+        .fhb-button.-lite{ 
+          box-shadow: none;
+          background: #E0EBFE;
+          color: #156DE0;
+        }
+        .fhb-button:active{
+          opacity: 0.8;
+        } 
+        .fhb-button:hover{ 
+          cursor: pointer;
+        }
+        .fhb-button {
+          @extend flex;
+          width: 120px;
+          height: 40px;
+          justify-content: center;
+          align-items: center;
+          color: #fff;
+          font-family: nun-bold;
+          font-size: 14px;
+          background: linear-gradient(78.26deg, #5C89FA -2.27%, #6AC2FD 149.58%), #5C88FA;
+          box-shadow: 0px 18px 33px rgba(97, 156, 251, 0.57);
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+  .f-content-wrapper {
+    @extend box;
+    width: 100%;
+    flex: 1;
+    margin: 80px 0 150px 0;
+    .f-content {
+      @extend box;
+      width: 100%;
+      .fc-about {
+        @extend box;
+        width: 50%;
+        .fca-logo {
+          @extend flex;
+          height: 100%;
+          // justify-content: center;
+          align-items: center;
+          img {
+            height: 50px;
+          }
+          span {
+            font-family: pro-reg;
+            font-size: 14px;
+            color: #555;
+            letter-spacing: 5px;
+            padding-left: 10px;
+          }
+        }
+        .fca-desc {
+          @extend flex;
+          width: 100%;
+          padding: 15px 0 25px 0;
+          max-width: 300px;
+          font-family: nun-reg;
+          font-size: 14px;
+          color: #555;
+        }
+        .fca-contact {
+          @extend box;
+          color:#0254C0;
+          line-height: 25px;
+          font-size: 14px;
+          font-family: nun-bold;
+          width: 100%;
+        }
+      }
+      .fc-link {
+        @extend box;
+        width: 25%;
+      }
+      .fc-sm {
+        @extend box;
+        width: 25%;
+      }
+      .fc-sub:hover{
+        cursor: pointer;
+        color:#03459b;
+      }
+      .fc-heading,
+      .fc-sub {
+        @extend box;
+        clear: both;
+        margin-right: auto;
+        font-family: nun-bold;
+        color:#0254C0;
+        font-size: 18px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+      }
+      .fc-sub {
+        font-size: 14px;
+        padding-bottom: 10px;
+      }
+      .fc-input {
+        @extend box;
+        width: 100%;
+        max-width: 200px;
+        height: 40px;
+        background: #3775d125;
+        overflow: hidden;
+        border-radius: 4px;
+        .fci-button:hover{ 
+          cursor: pointer;
+          background: #0f67da;
+        }
+        .fci-button {
+          @extend flex;
+          position: absolute;
+          width: 50px;
+          height: 50px;
+          border-radius: 100%;
+          background: #0254C0;
+          right: -10px;
+          top:-8px;
+          justify-content: center;
+          align-items: center;
+          padding-right: 10px;
+          padding-top: 4px;
+        }
+        input:focus{ 
+          outline: none;
+          border: 2px solid #0254C0;
+        }
+        input {
+          @extend box;
+          width: 100%;
+          height: 100%;
+          background: transparent;
+          padding-left: 15px;
+          border-radius: 6px;
+          border: 2px solid transparent;
+          color: #013477;
+          font-family: nun-reg;
+          font-size: 12px;
+          
+        }
+        input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+          color: rgb(35, 76, 183);
+          opacity: 0.63; /* Firefox */
+        }
+        input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+          color: rgba(35, 76, 183, 0.63)
+        }
+        input::-ms-input-placeholder { /* Microsoft Edge */
+          color: rgba(35, 76, 183, 0.63)
+        }
+      }
+      .fcsm-buttons {
+        @extend box;
+        width: 100%;
+        padding-top: 20px;
+        .fcsmb-button:hover{ 
+          color: #0f67da;
+          cursor: pointer;
+        }
+        .fcsmb-button {
+          @extend box;
+          width: 30px;
+          height: 30px;
+          margin-right: 10px;
+          font-size: 30px;
+          color: #0254C0;
+        }
+      }
+    }
+  }
+  .f-bg {
+    @extend box;
+    position: absolute;
+    width: 100%;
+    top: 40px;
+    left:0;
+    overflow: hidden;
+    svg {
+      width: 100%;
+    }
+  }
+}

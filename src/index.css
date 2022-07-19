@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  font-family: nun-reg;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+@font-face {
+  font-family: pro-reg;
+  src: url(./assets/fonts/proxima_ssv/ProximaNovaRegular.otf);
+}
+@font-face {
+  font-family: pro-thin;
+  src: url(./assets/fonts/proxima_ssv/ProximaNovaThin.otf);
+}
+@font-face {
+  font-family: pro-bold;
+  src: url(./assets/fonts/proxima_ssv/ProximaNovaAltBold.otf);
+}
+
+@font-face {
+  font-family: nun-bold;
+  src: url(./assets/fonts/Nunito/Nunito-Bold.ttf);
+} 
+@font-face {
+  font-family: nun-reg;
+  src: url(./assets/fonts/Nunito/Nunito-Regular.ttf);
+} 
+@font-face {
+  font-family: nun-med;
+  src: url(./assets/fonts/Nunito/Nunito-SemiBold.ttf);
+} 

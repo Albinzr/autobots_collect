@@ -1,0 +1,76 @@
+box, .Landing .l-block .lb-input {
+  display: block;
+  float: left;
+  position: relative;
+  box-sizing: border-box; }
+
+flex, .Landing, .Landing .l-block {
+  display: flex;
+  position: relative;
+  box-sizing: border-box; }
+
+coolbarNormal::-webkit-scrollbar {
+  width: 10px;
+  height: 5px; }
+
+coolbarNormal:hover::-webkit-scrollbar {
+  width: 10px;
+  height: 5px; }
+
+coolbarNormal::-webkit-scrollbar-thumb {
+  background: #00000010;
+  border-radius: 10px; }
+
+coolbarNormal:hover::-webkit-scrollbar-thumb {
+  background: #9c9c9c; }
+
+orangeBG {
+  background: linear-gradient(252.2deg, #FBCD15 -58.69%, #FEA435 108.45%), #C4C4C4; }
+
+orangeShadow {
+  box-shadow: 0px 16px 30px rgba(253, 178, 43, 0.62); }
+
+orangeShadowHover {
+  box-shadow: 2px 16px 35px rgba(253, 178, 43, 0.62); }
+
+orangeShadowBig {
+  box-shadow: 29px 42px 101px 1px rgba(226, 172, 31, 0.35); }
+
+blueBG {
+  background: linear-gradient(78.26deg, #5C89FA -2.27%, #6AC2FD 149.58%), #5C88FA; }
+
+.Landing {
+  width: 100%;
+  padding-top: 100px; }
+  .Landing .l-block {
+    flex: 1;
+    height: 100%;
+    flex-direction: column; }
+    .Landing .l-block img {
+      width: 100%; }
+    .Landing .l-block .lb-heading {
+      padding-top: 50px; }
+    .Landing .l-block .lb-desc {
+      padding-top: 30px;
+      max-width: 400px; }
+    .Landing .l-block .lb-button {
+      margin-top: 15px; }
+    .Landing .l-block .lb-input:focus {
+      border-color: #5C89FA;
+      box-shadow: 2px 3px 23px #5c89fa2f;
+      outline: none; }
+    .Landing .l-block .lb-input {
+      width: 300px;
+      height: 45px;
+      margin-top: 30px;
+      border-radius: 4px;
+      border: 2px solid transparent;
+      background: rgba(211, 211, 211, 0.239);
+      font-family: nun-reg;
+      font-size: 14px;
+      color: #555;
+      padding-left: 15px; }
+    .Landing .l-block .lb-input.-emErr.-invalid:focus,
+    .Landing .l-block .lb-input.-emErr.-invalid {
+      border-color: #b34a4a;
+      box-shadow: 2px 3px 43px rgba(255, 27, 27, 0.28); }

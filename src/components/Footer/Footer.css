@@ -1,0 +1,215 @@
+box, .Footer .f-content-wrapper, .Footer .f-content-wrapper .f-content, .Footer .f-content-wrapper .f-content .fc-about, .Footer .f-content-wrapper .f-content .fc-about .fca-contact, .Footer .f-content-wrapper .f-content .fc-link, .Footer .f-content-wrapper .f-content .fc-sm, .Footer .f-content-wrapper .f-content .fc-heading,
+.Footer .f-content-wrapper .f-content .fc-sub, .Footer .f-content-wrapper .f-content .fc-input, .Footer .f-content-wrapper .f-content .fc-input input, .Footer .f-content-wrapper .f-content .fcsm-buttons, .Footer .f-content-wrapper .f-content .fcsm-buttons .fcsmb-button, .Footer .f-bg {
+  display: block;
+  float: left;
+  position: relative;
+  box-sizing: border-box; }
+
+flex, .Footer, .Footer .f-head-wrapper, .Footer .f-head-wrapper .f-head, .Footer .f-head-wrapper .f-head .fh-text, .Footer .f-head-wrapper .f-head .fh-text .fht-heading,
+.Footer .f-head-wrapper .f-head .fh-text .fht-desc, .Footer .f-head-wrapper .f-head .fh-buttons, .Footer .f-head-wrapper .f-head .fh-buttons .fhb-button, .Footer .f-content-wrapper .f-content .fc-about .fca-logo, .Footer .f-content-wrapper .f-content .fc-about .fca-desc, .Footer .f-content-wrapper .f-content .fc-input .fci-button {
+  display: flex;
+  position: relative;
+  box-sizing: border-box; }
+
+coolbarNormal::-webkit-scrollbar {
+  width: 10px;
+  height: 5px; }
+
+coolbarNormal:hover::-webkit-scrollbar {
+  width: 10px;
+  height: 5px; }
+
+coolbarNormal::-webkit-scrollbar-thumb {
+  background: #00000010;
+  border-radius: 10px; }
+
+coolbarNormal:hover::-webkit-scrollbar-thumb {
+  background: #9c9c9c; }
+
+orangeBG {
+  background: linear-gradient(252.2deg, #FBCD15 -58.69%, #FEA435 108.45%), #C4C4C4; }
+
+orangeShadow {
+  box-shadow: 0px 16px 30px rgba(253, 178, 43, 0.62); }
+
+orangeShadowHover {
+  box-shadow: 2px 16px 35px rgba(253, 178, 43, 0.62); }
+
+orangeShadowBig {
+  box-shadow: 29px 42px 101px 1px rgba(226, 172, 31, 0.35); }
+
+blueBG {
+  background: linear-gradient(78.26deg, #5C89FA -2.27%, #6AC2FD 149.58%), #5C88FA; }
+
+.Footer {
+  width: 100%;
+  margin-top: 160px;
+  overflow: hidden; }
+  .Footer .f-head-wrapper {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px; }
+    .Footer .f-head-wrapper .f-head {
+      width: 100%;
+      max-width: 800px;
+      min-height: 150px;
+      background: #FFFFFF;
+      box-shadow: 0px 37px 108px rgba(0, 0, 0, 0.13);
+      border-radius: 4px;
+      padding: 50px;
+      justify-content: center;
+      align-items: center; }
+      .Footer .f-head-wrapper .f-head .fh-text {
+        flex: 1;
+        flex-direction: column;
+        padding-right: 80px; }
+        .Footer .f-head-wrapper .f-head .fh-text .fht-heading,
+        .Footer .f-head-wrapper .f-head .fh-text .fht-desc {
+          width: 100%;
+          font-family: nun-bold;
+          color: #555;
+          font-size: 20px; }
+        .Footer .f-head-wrapper .f-head .fh-text .fht-desc {
+          font-family: nun-reg;
+          font-size: 14px;
+          padding-top: 10px; }
+      .Footer .f-head-wrapper .f-head .fh-buttons {
+        flex: 1;
+        justify-content: space-between; }
+        .Footer .f-head-wrapper .f-head .fh-buttons .fhb-button.-lite {
+          box-shadow: none;
+          background: #E0EBFE;
+          color: #156DE0; }
+        .Footer .f-head-wrapper .f-head .fh-buttons .fhb-button:active {
+          opacity: 0.8; }
+        .Footer .f-head-wrapper .f-head .fh-buttons .fhb-button:hover {
+          cursor: pointer; }
+        .Footer .f-head-wrapper .f-head .fh-buttons .fhb-button {
+          width: 120px;
+          height: 40px;
+          justify-content: center;
+          align-items: center;
+          color: #fff;
+          font-family: nun-bold;
+          font-size: 14px;
+          background: linear-gradient(78.26deg, #5C89FA -2.27%, #6AC2FD 149.58%), #5C88FA;
+          box-shadow: 0px 18px 33px rgba(97, 156, 251, 0.57);
+          border-radius: 4px; }
+  .Footer .f-content-wrapper {
+    width: 100%;
+    flex: 1;
+    margin: 80px 0 150px 0; }
+    .Footer .f-content-wrapper .f-content {
+      width: 100%; }
+      .Footer .f-content-wrapper .f-content .fc-about {
+        width: 50%; }
+        .Footer .f-content-wrapper .f-content .fc-about .fca-logo {
+          height: 100%;
+          align-items: center; }
+          .Footer .f-content-wrapper .f-content .fc-about .fca-logo img {
+            height: 50px; }
+          .Footer .f-content-wrapper .f-content .fc-about .fca-logo span {
+            font-family: pro-reg;
+            font-size: 14px;
+            color: #555;
+            letter-spacing: 5px;
+            padding-left: 10px; }
+        .Footer .f-content-wrapper .f-content .fc-about .fca-desc {
+          width: 100%;
+          padding: 15px 0 25px 0;
+          max-width: 300px;
+          font-family: nun-reg;
+          font-size: 14px;
+          color: #555; }
+        .Footer .f-content-wrapper .f-content .fc-about .fca-contact {
+          color: #0254C0;
+          line-height: 25px;
+          font-size: 14px;
+          font-family: nun-bold;
+          width: 100%; }
+      .Footer .f-content-wrapper .f-content .fc-link {
+        width: 25%; }
+      .Footer .f-content-wrapper .f-content .fc-sm {
+        width: 25%; }
+      .Footer .f-content-wrapper .f-content .fc-sub:hover {
+        cursor: pointer;
+        color: #03459b; }
+      .Footer .f-content-wrapper .f-content .fc-heading,
+      .Footer .f-content-wrapper .f-content .fc-sub {
+        clear: both;
+        margin-right: auto;
+        font-family: nun-bold;
+        color: #0254C0;
+        font-size: 18px;
+        padding-right: 20px;
+        padding-bottom: 20px; }
+      .Footer .f-content-wrapper .f-content .fc-sub {
+        font-size: 14px;
+        padding-bottom: 10px; }
+      .Footer .f-content-wrapper .f-content .fc-input {
+        width: 100%;
+        max-width: 200px;
+        height: 40px;
+        background: #3775d125;
+        overflow: hidden;
+        border-radius: 4px; }
+        .Footer .f-content-wrapper .f-content .fc-input .fci-button:hover {
+          cursor: pointer;
+          background: #0f67da; }
+        .Footer .f-content-wrapper .f-content .fc-input .fci-button {
+          position: absolute;
+          width: 50px;
+          height: 50px;
+          border-radius: 100%;
+          background: #0254C0;
+          right: -10px;
+          top: -8px;
+          justify-content: center;
+          align-items: center;
+          padding-right: 10px;
+          padding-top: 4px; }
+        .Footer .f-content-wrapper .f-content .fc-input input:focus {
+          outline: none;
+          border: 2px solid #0254C0; }
+        .Footer .f-content-wrapper .f-content .fc-input input {
+          width: 100%;
+          height: 100%;
+          background: transparent;
+          padding-left: 15px;
+          border-radius: 6px;
+          border: 2px solid transparent;
+          color: #013477;
+          font-family: nun-reg;
+          font-size: 12px; }
+        .Footer .f-content-wrapper .f-content .fc-input input::placeholder {
+          /* Chrome, Firefox, Opera, Safari 10.1+ */
+          color: #234cb7;
+          opacity: 0.63;
+          /* Firefox */ }
+        .Footer .f-content-wrapper .f-content .fc-input input:-ms-input-placeholder {
+          /* Internet Explorer 10-11 */
+          color: rgba(35, 76, 183, 0.63); }
+        .Footer .f-content-wrapper .f-content .fc-input input::-ms-input-placeholder {
+          /* Microsoft Edge */
+          color: rgba(35, 76, 183, 0.63); }
+      .Footer .f-content-wrapper .f-content .fcsm-buttons {
+        width: 100%;
+        padding-top: 20px; }
+        .Footer .f-content-wrapper .f-content .fcsm-buttons .fcsmb-button:hover {
+          color: #0f67da;
+          cursor: pointer; }
+        .Footer .f-content-wrapper .f-content .fcsm-buttons .fcsmb-button {
+          width: 30px;
+          height: 30px;
+          margin-right: 10px;
+          font-size: 30px;
+          color: #0254C0; }
+  .Footer .f-bg {
+    position: absolute;
+    width: 100%;
+    top: 40px;
+    left: 0;
+    overflow: hidden; }
+    .Footer .f-bg svg {
+      width: 100%; }

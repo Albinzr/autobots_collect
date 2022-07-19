@@ -1,0 +1,40 @@
+@import '../../mixins';
+
+.TopFeatures {
+  @extend box;
+  width: 100%;
+  margin-top: 130px;
+  .tf-bg-circle {
+    @extend box;
+    position: absolute;
+    border-radius: 100%;
+    right: -500px;
+    bottom: -500px;
+    z-index: -1;
+    width: 800px;
+    height: 1200px;
+    background: linear-gradient(180deg, rgba(245, 163, 101, 0.24) 0%, rgba(245, 163, 101, 0.08) 0.01%, rgba(250, 189, 96, 0.05) 100%);
+    transform: rotate(-45deg);
+  }
+  .tf-bg-circle-2 {
+    @extend box;
+    position: absolute;
+    border-radius: 100%;
+    left: -200px;
+    top: 100px;
+    z-index: -1;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(180deg, rgba(245, 163, 101, 0) 0%, rgba(245, 163, 101, 0) 0.00%, rgba(250, 189, 96, 0.12) 100%);
+  }
+  .tf-img {
+    @extend box;
+    width: 100%;
+    padding: 50px 100px;
+    img {
+      width: 100%;
+      border-radius: 4px;
+      // @extend orangeShadowBig;
+    }
+  }
+}

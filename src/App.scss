@@ -1,0 +1,84 @@
+@import './mixins';
+
+.ap-desc,
+.ap-subhead,
+.ap-heading {
+  @extend flex;
+  width: 100%;
+  font-family: nun-bold;
+  font-size: 64px;  
+  flex-direction: column;
+  line-height: 100%;
+  color: #555;
+  span {
+    width: 100%;
+  }
+}
+
+.ap-subhead{
+  font-size: 48px;
+}
+
+.ap-desc {
+  padding-top: 30px;
+  span {
+    max-width: 530px;
+  }
+}
+.ap-desc.-center,
+.ap-subhead.-center,
+.ap-heading.-center {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  span {
+    text-align: center;
+  }
+}
+.ap-desc {
+  font-size: 16px;
+  font-family: nun-reg;
+  line-height: 140%;
+  color: #777;
+}
+
+.-ap-underline:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  height: 5px;
+  width: 50px;
+  background: #333;
+  border-radius: 50px;
+}
+
+.ap-button:hover{ 
+  cursor: pointer;
+  @extend orangeShadowHover;
+  opacity: 0.8;
+}
+.ap-button:active{ 
+  cursor: pointer;
+  @extend orangeShadow;
+  transform: translateY(0px);
+}
+.ap-button{
+  @extend flex;
+  @extend orangeBG;
+  @extend orangeShadow;
+  width: 120px;
+  height: 40px;
+  font-family: nun-bold;
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 4px;
+  transition: 0.1s;
+  user-select: none;
+}
+
+.ap-button.-blue{ 
+
+}

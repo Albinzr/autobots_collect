@@ -1,0 +1,111 @@
+box {
+  display: block;
+  float: left;
+  position: relative;
+  box-sizing: border-box; }
+
+flex, .ap-desc,
+.ap-subhead,
+.ap-heading, .ap-button {
+  display: flex;
+  position: relative;
+  box-sizing: border-box; }
+
+coolbarNormal::-webkit-scrollbar {
+  width: 10px;
+  height: 5px; }
+
+coolbarNormal:hover::-webkit-scrollbar {
+  width: 10px;
+  height: 5px; }
+
+coolbarNormal::-webkit-scrollbar-thumb {
+  background: #00000010;
+  border-radius: 10px; }
+
+coolbarNormal:hover::-webkit-scrollbar-thumb {
+  background: #9c9c9c; }
+
+orangeBG, .ap-button {
+  background: linear-gradient(252.2deg, #FBCD15 -58.69%, #FEA435 108.45%), #C4C4C4; }
+
+orangeShadow, .ap-button:active, .ap-button {
+  box-shadow: 0px 16px 30px rgba(253, 178, 43, 0.62); }
+
+orangeShadowHover, .ap-button:hover {
+  box-shadow: 2px 16px 35px rgba(253, 178, 43, 0.62); }
+
+orangeShadowBig {
+  box-shadow: 29px 42px 101px 1px rgba(226, 172, 31, 0.35); }
+
+blueBG {
+  background: linear-gradient(78.26deg, #5C89FA -2.27%, #6AC2FD 149.58%), #5C88FA; }
+
+.ap-desc,
+.ap-subhead,
+.ap-heading {
+  width: 100%;
+  font-family: nun-bold;
+  font-size: 64px;
+  flex-direction: column;
+  line-height: 100%;
+  color: #555; }
+  .ap-desc span,
+  .ap-subhead span,
+  .ap-heading span {
+    width: 100%; }
+
+.ap-subhead {
+  font-size: 48px; }
+
+.ap-desc {
+  padding-top: 30px; }
+  .ap-desc span {
+    max-width: 530px; }
+
+.ap-desc.-center,
+.ap-subhead.-center,
+.ap-heading.-center {
+  justify-content: center;
+  text-align: center;
+  align-items: center; }
+  .ap-desc.-center span,
+  .ap-subhead.-center span,
+  .ap-heading.-center span {
+    text-align: center; }
+
+.ap-desc {
+  font-size: 16px;
+  font-family: nun-reg;
+  line-height: 140%;
+  color: #777; }
+
+.-ap-underline:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  height: 5px;
+  width: 50px;
+  background: #333;
+  border-radius: 50px; }
+
+.ap-button:hover {
+  cursor: pointer;
+  opacity: 0.8; }
+
+.ap-button:active {
+  cursor: pointer;
+  transform: translateY(0px); }
+
+.ap-button {
+  width: 120px;
+  height: 40px;
+  font-family: nun-bold;
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 4px;
+  transition: 0.1s;
+  user-select: none; }

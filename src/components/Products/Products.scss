@@ -1,0 +1,141 @@
+@import '../../mixins';
+
+.Products {
+  @extend box;
+  width: 100%;
+  padding-top: 100px;
+  .p-heading {
+    .p-sub {
+      padding-top: 0px;
+    }
+  }
+  .p-row {
+    @extend flex;
+    margin-top: 130px;
+    margin-bottom: 100px;
+    justify-content: space-between;
+    .pr-bg-circle-1 {
+      @extend box;
+      position: absolute;
+      border-radius: 100%;
+      left: -500px;
+      top: -100px;
+      z-index: -1;
+      width: 600px;
+      height: 1000px;
+      background: linear-gradient(180deg, rgba(101, 185, 245, 0.24) 0%, rgba(101, 115, 245, 0.03) 0.01%, rgba(96, 176, 250, 0.12) 100%);
+      transform: rotate(36.39deg);
+    }
+    .pr-bg-circle-2 {
+      @extend box;
+      position: absolute;
+      border-radius: 100%;
+      right: -500px;
+      bottom: -100px;
+      z-index: -1;
+      width: 700px;
+      height: 800px;
+      background: linear-gradient(90deg, rgba(245, 163, 101, 0.24) 0%, rgba(245, 163, 101, 0.08) 0.01%, rgba(250, 189, 96, 0.05) 100%);
+      transform: rotate(-236.39deg);
+    }
+    .pr-col {
+      @extend flex;
+      flex: 1;
+      max-width: 480px;
+      flex-direction: column;
+      justify-content: center;
+      .prc-img {
+        @extend flex;
+        width: 100%;
+        margin-top: 100px;
+        img {
+          width: 100%;
+        } 
+      }
+      .prc-head  {
+
+      }
+      .prc-desc {
+        padding-top: 60px;
+        max-width: 380px;
+      } 
+      .prc-item:nth-child(even){
+        margin-right: 25px;
+      }
+      .prc-item.-orange{ 
+        box-shadow: 7px 25px 120px rgba(243, 181, 59, 0.45);
+      }
+      .prc-item {
+        @extend flex;
+        width: 100%;
+        max-width: 450px;
+        margin-left: auto;
+        justify-self: flex-end;
+        align-items: center;
+        justify-content: center;
+        padding: 25px;
+        background: #fff;
+        box-shadow: 0 0 60px rgba(0,0,0,0.1);
+        margin-bottom: 25px;
+        border-radius: 4px;
+        overflow: hidden;
+        min-height: 130px;
+        .prci-icon {
+          @extend flex;
+          width: 70px;
+          height: 70px;
+          // background: #eee;
+          margin-right: 25px;
+          justify-content: center;
+          align-items: center;
+          font-size: 50px;
+          i {
+            background-clip: text;
+            -webkit-background-clip: text;
+            background-image: linear-gradient(120deg, #f8bf15 0%, #ec7e1e 100%); 
+            -webkit-text-fill-color: transparent;
+          }
+        }
+        .prci-body {
+          @extend flex;
+          flex: 1;
+          flex-direction: column;
+          .prcib-head {
+            @extend box;
+            font-family: nun-bold;
+            font-size: 18px;
+            color: #444;
+            margin-bottom: 5px;
+          }
+          .prcib-desc {
+            @extend box;
+            font-family: nun-reg;
+            font-size: 12px;
+            color: #555;
+          }
+        }
+      }
+      .prc-item.-blue{ 
+        box-shadow: 7px 25px 121px rgba(99, 154, 248, 0.35);
+        .prci-icon {
+          i {
+            background-image: linear-gradient(78.26deg, #5C89FA -2.27%, #6AC2FD 149.58%);
+          }
+        }
+      } 
+    }
+  }
+  .p-row.-reverse{ 
+    flex-direction: row-reverse;
+    .pr-col { 
+      .prc-item:nth-child(even){ 
+        margin-left: 25px;
+      }
+      .prc-item {
+        justify-self: flex-start;
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@import '../../mixins';
+.ContentWrapper {
+  @extend flex;
+  width: 100%;
+  justify-content: center;
+  .ContentWrapper-wrapper {
+    @extend box;
+    width: 1200px;
+  }
+}

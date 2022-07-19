@@ -1,0 +1,230 @@
+@import '../../mixins';
+
+.Pricing {
+  @extend flex;
+  width: 100%;
+  padding-top: 100px;
+  flex-direction: column;
+  align-items: center;
+  z-index: 10;
+  .pc-container {
+    @extend flex;
+    margin-top: 100px;
+    width: 1100px;
+    background: #fff;
+    // height: 600px;
+    border-radius: 20px;
+    box-shadow: 13px 68px 147px rgba(97, 156, 251, 0.69);
+    padding: 20px 10px;
+    .pcc-info {
+      @extend box;
+      flex: 1;
+      margin: 0 10px;
+      border-radius: 10px;
+      background-image: linear-gradient(197.09deg, #514DB5 -11.17%, #514EB2 88.24%);
+      .pcci-head { 
+        @extend flex;
+        width: 100%;
+        min-height: 100px;
+        flex-direction: column;
+        padding: 30px;
+        justify-content: center;
+        span {
+          font-family: nun-reg;
+          font-size: 36px;
+          line-height: 110%;
+          color: #fff;
+          b {
+            font-family: nun-bold;
+          }
+        }
+      }
+      .pcci-body {
+        @extend box;
+        width: 100%;
+        padding: 25px 30px;
+        span {
+          @extend box;
+          width: 100%;
+          margin: 5px 0;
+          padding-right: 40px;
+          font-family: nun-reg;
+          font-size: 14px;
+          color: rgba(255,255,255,0.5);
+        }
+      }
+    }
+    .pcc-plans { 
+      @extend flex;
+      flex-direction: column;
+      height: 100%;
+      flex: 2;
+      .pccp-head { 
+        @extend flex;
+        width: 100%;
+        min-height: 100px;
+        flex-direction: column;
+        padding: 30px;
+        justify-content: center;
+        span {
+          font-family: nun-reg;
+          font-size: 36px;
+          line-height: 110%;
+          color: #555;
+          b {
+            font-family: nun-bold;
+          }
+        }
+      }
+      .pccp-body {
+        @extend flex;
+        height: 100%;
+        flex: 1;
+        .pccpb-item.-blue{ 
+          background: linear-gradient(197.09deg, #65ADFC -11.17%, #5D8CFA 88.24%), #ECECEC;
+          .pccpbi-head {
+            .pccpbih-title {
+              color: #fff;
+              span {
+                background: #fff;
+              }
+            }
+            .pccpbih-sub {
+              div, span {
+                color: #fff;
+              }
+              span {
+                color: #fff;
+              }
+            }
+          }
+          .pccpbi-sub {
+            color: #fff;
+          }
+          .pccpbi-list {
+            .pccpbi-list-item {
+              .pccpbi-li-tick {
+                span {
+                  border: 2px solid #fff;
+                }
+              }
+              .pccpbi-li-text {
+                color: #fff;
+              }
+            }
+          }
+        }
+        .pccpb-item {
+          @extend flex;
+          flex: 1;
+          margin: 0 10px;
+          border-radius: 10px;
+          background: linear-gradient(197.09deg, #FAFAFA -11.17%, rgba(255, 255, 255, 0) 88.24%), #ECECEC;
+          padding: 35px;
+          flex-direction: column;
+          .pccpbi-head {
+            @extend flex;
+            width: 100%;
+            .pccpbih-title {
+              @extend flex;
+              flex: 1;
+              font-family: nun-bold;
+              font-size: 36px;
+              color: #333;
+              span {
+                position: absolute;
+                width: 28px;
+                height: 5px;
+                background: #333;
+                bottom: 0px;
+                border-radius: 10px;
+              }
+            }
+            .pccpbih-sub {
+              @extend flex;
+              flex: 1;
+              flex-direction: column;
+              div, span {
+                text-align: right;
+                font-family: nun-reg;
+                font-size: 25px;
+                color: #333;
+              }
+              span {
+                color: #7a7a7a;
+                font-size: 14px;
+              }
+            }
+          }
+          .pccpbi-sub {
+            @extend flex;
+            width: 100%;
+            font-family: nun-bold;
+            font-size: 18px;
+            color: #333;
+            padding: 20px 0;
+          }
+          .pccpbi-list {
+            @extend box;
+            width: 100%;
+            .pccpbi-list-item {
+              @extend flex;
+              width: 100%;
+              padding: 5px;
+              .pccpbi-li-tick {
+                @extend flex;
+                width: 30px;
+                justify-content: flex-start;
+                align-items: center;
+                span {
+                  @extend box;
+                  position: absolute;
+                  width: 12px;
+                  height: 9px;
+                  border: 2px solid #777;
+                  border-top-color: transparent!important;
+                  border-right-color: transparent!important;
+                  transform: rotate(-45deg) translate(3px);
+                }
+              }
+              .pccpbi-li-text {
+                @extend flex;
+                flex: 1;
+                font-family: nun-bold;
+                color: #555;
+                font-size: 12px;
+                align-items: center;
+              }
+            }
+          }
+          .pccpbi-button.-white{
+            background: linear-gradient(78.26deg, #FFFFFF -2.27%, #E7E7E7 149.58%), #5C88FA;
+            box-shadow: 0px 12px 32px rgba(255, 255, 255, 0.46);
+            color: #555;
+          }
+          .pccpbi-button:active{ 
+            opacity: 0.8;
+          }
+          .pccpbi-button:hover{ 
+            cursor: pointer;
+          }
+          .pccpbi-button {
+            @extend flex;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+            width: 120px;
+            height: 40px;
+            background: linear-gradient(78.26deg, #5C89FA -2.27%, #6AC2FD 149.58%), #5C88FA;
+            box-shadow: 0px 18px 33px rgba(97, 156, 251, 0.57);
+            border-radius: 4px; 
+            color: #fff;
+            font-family: nun-bold;
+            font-size: 14px;
+            margin: 60px 0 20px 0;
+          }
+        }
+      }
+    }
+  }
+}
