@@ -70,24 +70,24 @@ export default ()=> {
               <div className='pccpbi-list'>
                 {freePlan.map(renderListItem)}
               </div>
-              <div className='pccpbi-button' onClick={window.openApp}>Start Now</div>
+              {/* <div className='pccpbi-button' onClick={window.openApp}>Start Now</div> */}
             </div>
             <div className='pccpb-item -blue'>
-              <div className='pccpbi-head'>
+              {/* <div className='pccpbi-head'>
                 <div className='pccpbih-title'>
                   Enterprise
                   <span></span>
                 </div>
                 <div className='pccpbih-sub'>
-                  {/* <div>49$</div>
-                  <span>monthly</span> */}
+                  <div>49$</div>
+                  <span>monthly</span> 
                 </div>
               </div>
               <div className='pccpbi-sub'>All of lite plus</div>
               <div className='pccpbi-list'>
                 {proPlan.map(renderListItem)}
               </div>
-              <div className='pccpbi-button -white' onClick={window.contactUs}>Contact Us</div>
+              <div className='pccpbi-button -white' onClick={window.contactUs}>Contact Us</div> */}
             </div>
           </div>
         </div>

@@ -9,17 +9,18 @@ export default ()=> {
     <div className='Products' id='products'>
       <div className='p-heading'>
         <div className='ap-heading -center'>Our Products</div>
-        <div className='p-sub ap-desc -center'>The products that helps you understand your users</div>
+        <div className='p-sub ap-desc -center'>The products that helps you to do what excites </div>
       </div>
 
       <div className='p-row'>
         <div className='pr-col'>
-          <div className='prc-head ap-subhead -ap-underline'>Tracking</div>
+          <div className='prc-head ap-subhead -ap-underline'>AI Generator</div>
           <div className='prc-desc ap-desc'>
             An effective prognosis to the most common pain point of our suite of apps - 
-            How users are engaging with and deriving the benefits out of their app usage. 
-            My team has been using this tool almost on a daily basis and we 
-            have been able to accost both the design and usage problems quite easily
+            How to reduce the time spend on editing, uploading and managing content.
+            AI Generator will help in generating a sync video from your images, music and videos.
+            Easy to modify and make changes to your content.
+            Automtic upload to multiple social media platforms.
           </div>
           <div className='prc-img'>
             <img src={trackingImage} alt=''/>
@@ -31,11 +32,10 @@ export default ()=> {
               <i className='fas fa-camcorder'></i>
             </div>
             <div className='prci-body'>
-              <div className='prcib-head'>Session Recordings</div>
+              <div className='prcib-head'>Auto Video Maker</div>
               <div className='prcib-desc'>
-                See what your users see User session replays help 
-                you discover exactly how your app is used in the 
-                hands of your customer.
+                Provide Photos, Videos and Music to make generate fully creative sync video.
+                
               </div>
             </div>
           </div>
@@ -44,9 +44,9 @@ export default ()=> {
               <i className='fas fa-bullseye-pointer'></i>
             </div>
             <div className='prci-body'>
-              <div className='prcib-head'>User Events</div>
+              <div className='prcib-head'>Single click</div>
               <div className='prcib-desc'>
-                List out each event one by one to know how the user behavior
+              You can make changes easily to generated video to make it more meaningful.
               </div>
             </div>
           </div>

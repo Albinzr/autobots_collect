@@ -7,11 +7,11 @@ export default ()=> {
   return (
     <div className='TopFeatures'>
       <div className='ap-heading -center'>
-        <span>Session Recording</span>
+        <span>AI Generator</span>
       </div>
       <div className='ap-desc -center'>
         <span>
-          See what your users see - see your visitor’s clicks, taps and mouse movements you can identify usability issues on the fly and issues they encounter.
+          Feed our AI Enging images, music and videos and it will generate a sync video.
         </span>
       </div>
       <div className='tf-img'>

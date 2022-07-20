@@ -10,7 +10,6 @@ import ContentWrapper from '../../components/ContentWrapper/ContentWrapper';
 import OurPartners from '../../components/OurPartners/OurPartners';
 
 export default ()=> {
-  
   return (
     <div className='Home'>
       <div className='h-head'>

@@ -28,8 +28,10 @@ export default ()=> {
               <div className='fht-desc'>Unlock the power of understanding your users and get the next level analytics from it!</div>
             </div>
             <div className='fh-buttons'>
-              <div className='fhb-button' onClick={window.openApp}>Start Now</div>
-              <div className='fhb-button -lite' onClick={window.contactUs}>Contact Us</div>
+              <div className='fhb-button' >Start Now</div>
+              {/* onClick={window.openApp} */}
+              <div className='fhb-button -lite' >Contact Us</div> 
+              {/* onClick={window.contactUs} */}
             </div>
           </div>
         </div>
@@ -38,18 +40,18 @@ export default ()=> {
             <div className='fc-about'>
               <div className='fca-logo'>
                 <img src={logo} alt=''/>
-                <span>APPLYTICS</span>
+                <span>Autobots.co.in</span>
               </div>
-              <div className='fca-desc'>Unlock the power of understanding your users and get the next level analytics from it!</div>
+              <div className='fca-desc'>Do what excite!</div>
               {/* <div className='fca-contact'>+91 8765 543 321</div> */}
-              <div className='fca-contact'>support@applytics.in</div> 
+              {/* <div className='fca-contact'>support@applytics.in</div>  */}
             </div>
             <div className='fc-link'>
               <div className='fc-heading'>Quick Links</div>
               <div className='fc-sub' onClick={()=> window.scrollElToView('header')}>About Us</div>
               <div className='fc-sub' onClick={()=> window.contactUs()}>Contact Us</div>
               <div className='fc-sub' onClick={()=> window.scrollElToView('products')}>Products</div>
-              <div className='fc-sub' onClick={()=> window.scrollElToView('pricing')}>Pricing Plans</div>
+              {/* <div className='fc-sub' onClick={()=> window.scrollElToView('pricing')}>Pricing Plans</div> */}
               {/* <div className='fc-sub'>FAQ's</div> */}
             </div>
             <div className='fc-sm'>

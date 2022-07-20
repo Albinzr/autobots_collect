@@ -28,13 +28,11 @@ export default ()=> {
     <div className='Landing'>
       <div className='l-block'>
         <div className='lb-heading ap-heading'>
-          <span>Know your</span>
-          <span>user experience</span>
-          <span>like a pro</span>
+          <span>Do what excites.</span>
         </div>
         <div className='lb-desc ap-desc'>
-          Understand your user by the click of a button, Learn how your customers 
-          use your web app’s and always staying ahead of the game
+        We Understand your needs, So you can do what excites you.
+        Use our platform to automate everything you need to do. So that you can focus on creating content.
         </div>
         <input onKeyUp={onEmailChange} placeholder='Your Email' className={'lb-input ' + (emailError && ' -emErr ') + (!emailValid && ' -invalid')}/>
         <div className='lb-button ap-button' onClick={validateEmail}>Start Now</div>
