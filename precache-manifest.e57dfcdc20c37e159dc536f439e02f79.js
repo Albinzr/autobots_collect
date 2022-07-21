@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4a9df58475158181a3d85712f21160cf",
+    "revision": "8dc35f4decc1cf36cd6c332a6eb9c276",
     "url": "//autobots.co.in/index.html"
   },
   {
-    "revision": "03d601e56d50d09cd0f6",
+    "revision": "b9a5c903cf28a88d902f",
     "url": "//autobots.co.in/static/css/main.deb61034.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "//autobots.co.in/static/js/2.eabb3021.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "03d601e56d50d09cd0f6",
-    "url": "//autobots.co.in/static/js/main.b346c1c2.chunk.js"
+    "revision": "b9a5c903cf28a88d902f",
+    "url": "//autobots.co.in/static/js/main.62f906ab.chunk.js"
   },
   {
     "revision": "fd061f8313651c732c8b",

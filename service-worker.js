@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "//autobots.co.in/precache-manifest.a8388bb6686e7070211b740f8689e4a9.js"
+  "//autobots.co.in/precache-manifest.e57dfcdc20c37e159dc536f439e02f79.js"
 );
 
 self.addEventListener('message', (event) => {
