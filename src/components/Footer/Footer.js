@@ -51,6 +51,8 @@ export default ()=> {
               <div className='fc-sub' onClick={()=> window.scrollElToView('header')}>About Us</div>
               <div className='fc-sub' onClick={()=> window.contactUs()}>Contact Us</div>
               <div className='fc-sub' onClick={()=> window.scrollElToView('products')}>Products</div>
+              <div className='fc-sub' onClick={()=> window.open("/tc.html", "_blank")}>Terms & conditions</div>
+              <div className='fc-sub' onClick={()=> window.open("/pp.html", "_blank")}>Privacy Policy</div> 
               {/* <div className='fc-sub' onClick={()=> window.scrollElToView('pricing')}>Pricing Plans</div> */}
               {/* <div className='fc-sub'>FAQ's</div> */}
             </div>
