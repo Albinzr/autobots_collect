@@ -54,8 +54,8 @@ blueBG {
       width: 100%;
       max-width: 800px;
       min-height: 150px;
-      background: #FFFFFF;
-      box-shadow: 0px 37px 108px rgba(0, 0, 0, 0.13);
+      /* background: #FFFFFF;
+      box-shadow: 0px 37px 108px rgba(0, 0, 0, 0.13); */
       border-radius: 4px;
       padding: 50px;
       justify-content: center;

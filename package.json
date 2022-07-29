@@ -1,9 +1,10 @@
 {
   "name": "applytics_web2",
   "version": "0.1.0",
-  "homepage": "https://http://autobots.co.in/",
+  "homepage": "https://autobots.co.in/",
   "private": false,
   "dependencies": {
+    "@react-oauth/google": "^0.2.6",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-google-login": "^5.2.2",
